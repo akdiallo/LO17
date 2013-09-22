@@ -28,7 +28,9 @@ print "
 	<LES_VOIRAUSSI>
 ".`perl voiraussi.pl $fichier`."
 	</LES_VOIRAUSSI>
-	<FOCUS>".$focus."</FOCUS>
+	<FOCUS>
+".`perl voiraussi.pl $fichier`."
+	</FOCUS>
 	<LES_GROSTITRES>".$les_grostitres."</LES_GROSTITRES>
 	<LES_RAPPELS>".$les_rappels."</LES_RAPPELS>
 </PAGE_LCI>";
