@@ -8,16 +8,23 @@ open(FILE,$fichier) or die("Could not open the file.");
 foreach $line (<FILE>) {
 
 #[mailto:(.*?)" class="S14">(.*?)<\/a>(.*?)]
-	$line =~ /<FOCUS>(.*?)<a href="(.*?)"><img src="(.*?)"(.*?)class="S401">(.*?)<\/a>(.*?)class="S48">(.*?)<\/a>(.*?)(?(?=mailto:)(.*?)" class="S14">(.*?)<\/a>(.*?))<\/FOCUS>/;
+	 
+	$line =~ /<FOCUS>(.*?)<a href="(.*?)"><img src="(.*?)"(.*?)class="S401">(.*?)<\/a>(.*?)class="S48">(.*?)<\/a>(.*?)<\/FOCUS>/;
 	#mailto:(.*?)" class="S14">(.*?)<\/a>(.*?)
+	
+	
 	$url_article = $2;
 	$titre_article = $5;
 	$date_article = "";
 	$url_image = $3;
 	$resume_article = $7;
-	$mailto = $9;
-	$auteur = $10;
+	$test = $8;
+	
+
 }
+	$test =~ / (.*?)mailto:(.*?)" class="S14">(.*?)<\/a>(.*?)/;
+	$mailto = $2;
+	$auteur = $3;
 
 print "	
 		<urlArticle>".$url_article."</urlArticle>
@@ -28,3 +35,4 @@ print "
 		<mailto>".$mailto."</mailto>
 		<auteur>".$auteur."</auteur>
 	";
+	
