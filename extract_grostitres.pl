@@ -8,16 +8,22 @@ open(FILE,$fichier) or die("Could not open the file.");
 foreach $line (<FILE>) {
 	
 	### GET GROS TITRES
-    $line =~ /<GROSTITRE>(.*?)"><img src="(.*?)"(.*?)class="S301">(.*?)<\/span>(.*?)class="S63">(.*?)<\/a>(.*?)class="S48">(.*?)<\/a>(.*?)/;
+	#from extract_focus.pl
+	#(?(?=mailto:)(.*?)" class="S14">(.*?)<\/a>(.*?))
+	
+	#sort tous les gros titres seulement avec auteur et email
+	#mailto:(.*?)" class="S14">(.*?)<\/a>(.*?)
+    $line =~ /<GROSTITRE>(.*?)"><img src="(.*?)"(.*?)class="S301">(.*?)<\/span>(.*?)class="S63">(.*?)<\/a>(.*?)class="S48">(.*?)<\/a><span class="S48">\((.*?)\)(.*?)/;
 	$status = $&;
 	$url_article = "/".$1;
 	$theme_article = $4;
 	$titre_article = $6;
-	$date_article = "";
+	$date_article = $9;
 	$url_image = $2;
 	$resume_article = $8;
-	$mailto = "";
-	$auteur = "";
+	$mailto = $11;
+	$auteur = $12;
+
 		
 	if ($prev ne $status) {
 		print "	

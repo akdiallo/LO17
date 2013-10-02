@@ -7,7 +7,9 @@ open(FILE,$fichier) or die("Could not open the file.");
 
 foreach $line (<FILE>) {
 
-	$line =~ /<FOCUS>(.*?)<a href="(.*?)"><img src="(.*?)"(.*?)class="S401">(.*?)<\/a>(.*?)class="S48">(.*?)<\/a>(.*?)[mailto:(.*?)" class="S14">(.*?)<\/a>(.*?)]<\/FOCUS>/;
+#[mailto:(.*?)" class="S14">(.*?)<\/a>(.*?)]
+	$line =~ /<FOCUS>(.*?)<a href="(.*?)"><img src="(.*?)"(.*?)class="S401">(.*?)<\/a>(.*?)class="S48">(.*?)<\/a>(.*?)(?(?=mailto:)(.*?)" class="S14">(.*?)<\/a>(.*?))<\/FOCUS>/;
+	#mailto:(.*?)" class="S14">(.*?)<\/a>(.*?)
 	$url_article = $2;
 	$titre_article = $5;
 	$date_article = "";
