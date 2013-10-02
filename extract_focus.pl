@@ -18,11 +18,11 @@ foreach $line (<FILE>) {
 	$date_article = "";
 	$url_image = $3;
 	$resume_article = $7;
-	$test = $8;
+	$result = $8;
 	
 
 }
-	$test =~ / (.*?)mailto:(.*?)" class="S14">(.*?)<\/a>(.*?)/;
+	$result =~ / (.*?)mailto:(.*?)" class="S14">(.*?)<\/a>(.*?)/;
 	$mailto = $2;
 	$auteur = $3;
 
