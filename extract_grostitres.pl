@@ -36,7 +36,7 @@ foreach $line (<FILE>) {
 	
 
 		
-	if ($prev ne $status) {
+	if ($prev ne $status && $theme_article ne "") {
 	
 		print "	
 		<GROSTITRE>
