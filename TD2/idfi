@@ -1,4 +1,6 @@
 a 		 dfi:326 		 idfi:0.00265624364374006
+a320 		 dfi:2 		 idfi:2.2148438480477
+a340 		 dfi:9 		 idfi:1.56163133427235
 abandon 		 dfi:8 		 idfi:1.61278385671974
 abandonne 		 dfi:1 		 idfi:2.51587384371168
 abandonner 		 dfi:5 		 idfi:1.81690383937566
@@ -1125,6 +1127,7 @@ bétancourt 		 dfi:1 		 idfi:2.51587384371168
 béton 		 dfi:3 		 idfi:2.03875258899202
 bêtes 		 dfi:4 		 idfi:1.91381385238372
 c 		 dfi:68 		 idfi:0.683364931005443
+c130 		 dfi:2 		 idfi:2.2148438480477
 ca 		 dfi:4 		 idfi:1.91381385238372
 cabine 		 dfi:3 		 idfi:2.03875258899202
 cabinet 		 dfi:11 		 idfi:1.47448115855345
@@ -1525,6 +1528,7 @@ clôture 		 dfi:4 		 idfi:1.91381385238372
 cm 		 dfi:2 		 idfi:2.2148438480477
 cnn 		 dfi:8 		 idfi:1.61278385671974
 co 		 dfi:8 		 idfi:1.61278385671974
+co2 		 dfi:2 		 idfi:2.2148438480477
 coalition 		 dfi:36 		 idfi:0.959571342944392
 coca 		 dfi:6 		 idfi:1.73772259332804
 cockpit 		 dfi:10 		 idfi:1.51587384371168
@@ -3102,6 +3106,7 @@ exécution 		 dfi:17 		 idfi:1.2854249223334
 exécuté 		 dfi:17 		 idfi:1.2854249223334
 exécutés 		 dfi:7 		 idfi:1.67077580369742
 ezzat 		 dfi:4 		 idfi:1.91381385238372
+f16 		 dfi:2 		 idfi:2.2148438480477
 fabrication 		 dfi:4 		 idfi:1.91381385238372
 fabuleux 		 dfi:4 		 idfi:1.91381385238372
 face 		 dfi:81 		 idfi:0.607388824833029
@@ -3438,6 +3443,8 @@ février 		 dfi:22 		 idfi:1.17345116288947
 fête 		 dfi:14 		 idfi:1.36974580803344
 fêtes 		 dfi:5 		 idfi:1.81690383937566
 g 		 dfi:1 		 idfi:2.51587384371168
+g5 		 dfi:4 		 idfi:1.91381385238372
+g8 		 dfi:11 		 idfi:1.47448115855345
 gabon 		 dfi:1 		 idfi:2.51587384371168
 gabonais 		 dfi:1 		 idfi:2.51587384371168
 gadgets 		 dfi:3 		 idfi:2.03875258899202
@@ -4975,6 +4982,8 @@ mexicains 		 dfi:3 		 idfi:2.03875258899202
 mexique 		 dfi:26 		 idfi:1.10090049574086
 mgr 		 dfi:2 		 idfi:2.2148438480477
 mi 		 dfi:7 		 idfi:1.67077580369742
+mi5 		 dfi:2 		 idfi:2.2148438480477
+mi6 		 dfi:3 		 idfi:2.03875258899202
 miami 		 dfi:1 		 idfi:2.51587384371168
 michael 		 dfi:44 		 idfi:0.872421167225492
 michalowski 		 dfi:6 		 idfi:1.73772259332804
@@ -5381,6 +5390,9 @@ numéro 		 dfi:32 		 idfi:1.01072386539177
 numéros 		 dfi:6 		 idfi:1.73772259332804
 nus 		 dfi:3 		 idfi:2.03875258899202
 ny 		 dfi:2 		 idfi:2.2148438480477
+n°1 		 dfi:11 		 idfi:1.47448115855345
+n°2 		 dfi:6 		 idfi:1.73772259332804
+n°3 		 dfi:3 		 idfi:2.03875258899202
 néanmoins 		 dfi:27 		 idfi:1.08451007955269
 nébuleuse 		 dfi:6 		 idfi:1.73772259332804
 nécessaire 		 dfi:10 		 idfi:1.51587384371168
@@ -7975,6 +7987,7 @@ testé 		 dfi:3 		 idfi:2.03875258899202
 texane 		 dfi:1 		 idfi:2.51587384371168
 texas 		 dfi:9 		 idfi:1.56163133427235
 texte 		 dfi:35 		 idfi:0.971805799361403
+tf1 		 dfi:115 		 idfi:0.455176003358067
 tgv 		 dfi:2 		 idfi:2.2148438480477
 thatcher 		 dfi:9 		 idfi:1.56163133427235
 thaïlande 		 dfi:9 		 idfi:1.56163133427235
@@ -8223,6 +8236,7 @@ tuée 		 dfi:11 		 idfi:1.47448115855345
 tuées 		 dfi:34 		 idfi:0.984394926669424
 tués 		 dfi:72 		 idfi:0.658541347280411
 tv 		 dfi:4 		 idfi:1.91381385238372
+tv5 		 dfi:2 		 idfi:2.2148438480477
 twin 		 dfi:6 		 idfi:1.73772259332804
 type 		 dfi:3 		 idfi:2.03875258899202
 typhon 		 dfi:7 		 idfi:1.67077580369742
@@ -8256,8 +8270,10 @@ tête 		 dfi:61 		 idfi:0.730544008700912
 têtes 		 dfi:6 		 idfi:1.73772259332804
 tôt 		 dfi:11 		 idfi:1.47448115855345
 töging 		 dfi:3 		 idfi:2.03875258899202
+u2 		 dfi:3 		 idfi:2.03875258899202
 udc 		 dfi:1 		 idfi:2.51587384371168
 ue 		 dfi:64 		 idfi:0.709693869727792
+ue3 		 dfi:2 		 idfi:2.2148438480477
 ukraine 		 dfi:9 		 idfi:1.56163133427235
 ukrainien 		 dfi:3 		 idfi:2.03875258899202
 ukrainienne 		 dfi:1 		 idfi:2.51587384371168
