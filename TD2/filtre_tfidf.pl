@@ -39,6 +39,10 @@ foreach $line (<FILE>) {
 	#print $res;
 	@moy = split(" ", $res);
 	if (@moy[0] > 0.35 && @results[0] > 0.35) {
-		print $line."\n";
+		### Regenerate le bon tdidf
+		#print $line."\n";
+	} else {
+		### Generate les mots a enlever
+		print @results[1]."\n";
 	}
 }
