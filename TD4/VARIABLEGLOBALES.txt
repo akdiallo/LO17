@@ -1,0 +1,79 @@
+ $TRASH
+	d'
+	dans
+	?
+	.
+	de
+	du
+	l'ensemble des
+	des
+	je
+	qui
+	dont
+	la
+	liste des
+	liste de
+	toutes
+ $TITLE
+	titre
+ $PAGE
+	focus
+	une
+	unes
+	article
+	articles
+	gros titres
+	articlent
+	focus
+	rappels
+	gros titres
+	pages
+ $SELECT
+	donne-moi
+	donne moi
+	donner
+	donnez
+	existe-t-il
+	y a-t-il
+	j'aimerais
+	je souhaiterais
+	je veux
+	je voudrais
+	retourner
+	quel est
+	quels sont
+	quelle est
+	quelles sont
+ $DATE
+	date
+	dates
+	janvier .. decembre
+	2005 .. NUMBERS
+	entre le
+	depuis q
+ $ABOUT
+	écrits
+	traite
+	traitent
+	traitants
+	qui parlent
+	font référence
+	porte sur
+	sur
+	évoque
+	concernant
+	dont le sujet
+	dont le thème
+	sur le theme
+	parle
+	parlant
+	parlait-on
+	parle-t-on
+	contenir
+	mot
+	possédant
+	possédant le terme
+ $COUNT
+	combien
+ $AUTHOR
+	proviennent
