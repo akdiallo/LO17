@@ -14,12 +14,19 @@
 	liste des
 	liste de
 	toutes
+	les
+	le
+	terme
+	moi
+	ensemble
+	l'ensemble
  $TITLE
 	titre
- $PAGE
-	focus
+ $UNE
 	une
 	unes
+ $PAGE
+	focus
 	article
 	articles
 	gros titres
@@ -28,7 +35,10 @@
 	rappels
 	gros titres
 	pages
+	titre
+	titres
  $SELECT
+ 	donne
 	donne-moi
 	donne moi
 	donner
@@ -44,6 +54,7 @@
 	quels sont
 	quelle est
 	quelles sont
+	veux
  $DATE
 	date
 	dates

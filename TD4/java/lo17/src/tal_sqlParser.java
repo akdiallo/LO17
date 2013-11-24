@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g 2013-11-22 13:30:52
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g 2013-11-22 16:16:51
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -7,16 +7,18 @@ import java.util.ArrayList;
 
 public class tal_sqlParser extends Parser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "SELECT", "COUNT", "TITLE", "PAGE", "DATE", "ABOUT", "CONJ", "POINT", "WS", "VAR"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "SELECT", "COUNT", "TITLE", "PAGE", "UNE", "DATE", "ABOUT", "CONJ_AND", "CONJ_OR", "POINT", "WS", "VAR"
     };
-    public static final int ABOUT=9;
-    public static final int WS=12;
+    public static final int ABOUT=10;
+    public static final int WS=14;
+    public static final int UNE=8;
     public static final int PAGE=7;
-    public static final int POINT=11;
-    public static final int CONJ=10;
-    public static final int VAR=13;
+    public static final int POINT=13;
+    public static final int CONJ_OR=12;
+    public static final int VAR=15;
+    public static final int CONJ_AND=11;
     public static final int COUNT=5;
-    public static final int DATE=8;
+    public static final int DATE=9;
     public static final int EOF=-1;
     public static final int SELECT=4;
     public static final int TITLE=6;
@@ -40,7 +42,7 @@ public class tal_sqlParser extends Parser {
 
 
     // $ANTLR start "listerequetes"
-    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:15:1: listerequetes returns [String sql = \"\"] : r= requete POINT ;
+    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:17:1: listerequetes returns [String sql = \"\"] : r= requete POINT ;
     public final String listerequetes() throws RecognitionException {
         String sql =  "";
 
@@ -49,15 +51,15 @@ public class tal_sqlParser extends Parser {
 
         Arbre lr_arbre;
         try {
-            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:16:25: (r= requete POINT )
-            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:17:3: r= requete POINT
+            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:18:25: (r= requete POINT )
+            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:19:3: r= requete POINT
             {
-            pushFollow(FOLLOW_requete_in_listerequetes142);
+            pushFollow(FOLLOW_requete_in_listerequetes152);
             r=requete();
 
             state._fsp--;
 
-            match(input,POINT,FOLLOW_POINT_in_listerequetes144); 
+            match(input,POINT,FOLLOW_POINT_in_listerequetes154); 
 
             				lr_arbre = r;
             				sql = lr_arbre.sortArbre();
@@ -78,7 +80,7 @@ public class tal_sqlParser extends Parser {
 
 
     // $ANTLR start "requete"
-    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:24:1: requete returns [Arbre req_arbre = new Arbre(\"\")] : SELECT ( TITLE | PAGE ) ( ABOUT | DATE ) ps= params ;
+    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:26:1: requete returns [Arbre req_arbre = new Arbre(\"\")] : ( SELECT | COUNT ) ( PAGE | UNE ) ( | ABOUT ) ps= params ;
     public final Arbre requete() throws RecognitionException {
         Arbre req_arbre =  new Arbre("");
 
@@ -87,19 +89,17 @@ public class tal_sqlParser extends Parser {
 
         Arbre ps_arbre;
         try {
-            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:25:26: ( SELECT ( TITLE | PAGE ) ( ABOUT | DATE ) ps= params )
-            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:26:3: SELECT ( TITLE | PAGE ) ( ABOUT | DATE ) ps= params
+            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:27:26: ( ( SELECT | COUNT ) ( PAGE | UNE ) ( | ABOUT ) ps= params )
+            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:28:3: ( SELECT | COUNT ) ( PAGE | UNE ) ( | ABOUT ) ps= params
             {
-            match(input,SELECT,FOLLOW_SELECT_in_requete171); 
-            req_arbre.ajouteFils(new Arbre("","select distinct"));
-            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:27:3: ( TITLE | PAGE )
+            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:28:3: ( SELECT | COUNT )
             int alt1=2;
             int LA1_0 = input.LA(1);
 
-            if ( (LA1_0==TITLE) ) {
+            if ( (LA1_0==SELECT) ) {
                 alt1=1;
             }
-            else if ( (LA1_0==PAGE) ) {
+            else if ( (LA1_0==COUNT) ) {
                 alt1=2;
             }
             else {
@@ -110,32 +110,32 @@ public class tal_sqlParser extends Parser {
             }
             switch (alt1) {
                 case 1 :
-                    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:27:4: TITLE
+                    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:29:5: SELECT
                     {
-                    match(input,TITLE,FOLLOW_TITLE_in_requete178); 
-                    req_arbre.ajouteFils(new Arbre("","mot"));
+                    match(input,SELECT,FOLLOW_SELECT_in_requete187); 
+                    req_arbre.ajouteFils(new Arbre("","select distinct"));
 
                     }
                     break;
                 case 2 :
-                    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:28:13: PAGE
+                    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:30:5: COUNT
                     {
-                    match(input,PAGE,FOLLOW_PAGE_in_requete194); 
-                    req_arbre.ajouteFils(new Arbre("","page"));
+                    match(input,COUNT,FOLLOW_COUNT_in_requete195); 
+                    req_arbre.ajouteFils(new Arbre("","select count(*)"));
 
                     }
                     break;
 
             }
 
-            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:30:3: ( ABOUT | DATE )
+            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:33:3: ( PAGE | UNE )
             int alt2=2;
             int LA2_0 = input.LA(1);
 
-            if ( (LA2_0==ABOUT) ) {
+            if ( (LA2_0==PAGE) ) {
                 alt2=1;
             }
-            else if ( (LA2_0==DATE) ) {
+            else if ( (LA2_0==UNE) ) {
                 alt2=2;
             }
             else {
@@ -146,31 +146,62 @@ public class tal_sqlParser extends Parser {
             }
             switch (alt2) {
                 case 1 :
-                    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:30:4: ABOUT
+                    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:34:5: PAGE
                     {
-                    match(input,ABOUT,FOLLOW_ABOUT_in_requete206); 
-
-                    		req_arbre.ajouteFils(new Arbre("","from titreresume"));
-                    		req_arbre.ajouteFils(new Arbre("","where"));
-                    		
+                    match(input,PAGE,FOLLOW_PAGE_in_requete212); 
+                    req_arbre.ajouteFils(new Arbre("","from titreresume"));
 
                     }
                     break;
                 case 2 :
-                    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:34:4: DATE
+                    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:35:5: UNE
                     {
-                    match(input,DATE,FOLLOW_DATE_in_requete213); 
+                    match(input,UNE,FOLLOW_UNE_in_requete220); 
 
-                    		req_arbre.ajouteFils(new Arbre("","from datearticle"));
-                    		req_arbre.ajouteFils(new Arbre("","where"));
-                    		
+                    			req_arbre.ajouteFils(new Arbre("","from titreresume"));
+                    			req_arbre.ajouteFils(new Arbre("","rubrique = 'une'"));
 
                     }
                     break;
 
             }
 
-            pushFollow(FOLLOW_params_in_requete224);
+            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:40:3: ( | ABOUT )
+            int alt3=2;
+            int LA3_0 = input.LA(1);
+
+            if ( (LA3_0==VAR) ) {
+                alt3=1;
+            }
+            else if ( (LA3_0==ABOUT) ) {
+                alt3=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 3, 0, input);
+
+                throw nvae;
+            }
+            switch (alt3) {
+                case 1 :
+                    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:41:5: 
+                    {
+                    }
+                    break;
+                case 2 :
+                    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:41:7: ABOUT
+                    {
+                    match(input,ABOUT,FOLLOW_ABOUT_in_requete241); 
+
+                    		    req_arbre.ajouteFils(new Arbre("","where"));
+                    		  
+
+                    }
+                    break;
+
+            }
+
+            pushFollow(FOLLOW_params_in_requete260);
             ps=params();
 
             state._fsp--;
@@ -195,7 +226,7 @@ public class tal_sqlParser extends Parser {
 
 
     // $ANTLR start "params"
-    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:44:1: params returns [Arbre les_pars_arbre = new Arbre(\"\")] : par1= param ( ( CONJ )? par2= param )* ;
+    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:54:1: params returns [Arbre les_pars_arbre = new Arbre(\"\")] : par1= param ( ( CONJ_AND )? par2= param )* ( ( CONJ_OR )? par2= param )* ;
     public final Arbre params() throws RecognitionException {
         Arbre les_pars_arbre =  new Arbre("");
 
@@ -206,10 +237,10 @@ public class tal_sqlParser extends Parser {
 
         Arbre par1_arbre, par2_arbre;
         try {
-            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:45:40: (par1= param ( ( CONJ )? par2= param )* )
-            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:46:3: par1= param ( ( CONJ )? par2= param )*
+            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:55:40: (par1= param ( ( CONJ_AND )? par2= param )* ( ( CONJ_OR )? par2= param )* )
+            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:56:3: par1= param ( ( CONJ_AND )? par2= param )* ( ( CONJ_OR )? par2= param )*
             {
-            pushFollow(FOLLOW_param_in_params252);
+            pushFollow(FOLLOW_param_in_params288);
             par1=param();
 
             state._fsp--;
@@ -218,40 +249,92 @@ public class tal_sqlParser extends Parser {
             			par1_arbre = par1;
             			les_pars_arbre.ajouteFils(par1_arbre);
             		
-            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:50:3: ( ( CONJ )? par2= param )*
-            loop4:
+            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:60:3: ( ( CONJ_AND )? par2= param )*
+            loop5:
             do {
-                int alt4=2;
-                int LA4_0 = input.LA(1);
+                int alt5=2;
+                int LA5_0 = input.LA(1);
 
-                if ( (LA4_0==CONJ||LA4_0==VAR) ) {
-                    alt4=1;
+                if ( (LA5_0==CONJ_AND||LA5_0==VAR) ) {
+                    alt5=1;
                 }
 
 
-                switch (alt4) {
+                switch (alt5) {
             	case 1 :
-            	    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:50:4: ( CONJ )? par2= param
+            	    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:60:4: ( CONJ_AND )? par2= param
             	    {
-            	    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:50:4: ( CONJ )?
-            	    int alt3=2;
-            	    int LA3_0 = input.LA(1);
+            	    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:60:4: ( CONJ_AND )?
+            	    int alt4=2;
+            	    int LA4_0 = input.LA(1);
 
-            	    if ( (LA3_0==CONJ) ) {
-            	        alt3=1;
+            	    if ( (LA4_0==CONJ_AND) ) {
+            	        alt4=1;
             	    }
-            	    switch (alt3) {
+            	    switch (alt4) {
             	        case 1 :
-            	            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:50:4: CONJ
+            	            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:60:4: CONJ_AND
             	            {
-            	            match(input,CONJ,FOLLOW_CONJ_in_params259); 
+            	            match(input,CONJ_AND,FOLLOW_CONJ_AND_in_params295); 
 
             	            }
             	            break;
 
             	    }
 
-            	    pushFollow(FOLLOW_param_in_params266);
+            	    pushFollow(FOLLOW_param_in_params302);
+            	    par2=param();
+
+            	    state._fsp--;
+
+
+            	    			par2_arbre = par2;
+            	    			les_pars_arbre.ajouteFils(new Arbre("", "AND"));
+            	    			les_pars_arbre.ajouteFils(par2_arbre);
+            	    		
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop5;
+                }
+            } while (true);
+
+            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:65:3: ( ( CONJ_OR )? par2= param )*
+            loop7:
+            do {
+                int alt7=2;
+                int LA7_0 = input.LA(1);
+
+                if ( (LA7_0==CONJ_OR||LA7_0==VAR) ) {
+                    alt7=1;
+                }
+
+
+                switch (alt7) {
+            	case 1 :
+            	    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:65:4: ( CONJ_OR )? par2= param
+            	    {
+            	    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:65:4: ( CONJ_OR )?
+            	    int alt6=2;
+            	    int LA6_0 = input.LA(1);
+
+            	    if ( (LA6_0==CONJ_OR) ) {
+            	        alt6=1;
+            	    }
+            	    switch (alt6) {
+            	        case 1 :
+            	            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:65:4: CONJ_OR
+            	            {
+            	            match(input,CONJ_OR,FOLLOW_CONJ_OR_in_params311); 
+
+            	            }
+            	            break;
+
+            	    }
+
+            	    pushFollow(FOLLOW_param_in_params318);
             	    par2=param();
 
             	    state._fsp--;
@@ -266,7 +349,7 @@ public class tal_sqlParser extends Parser {
             	    break;
 
             	default :
-            	    break loop4;
+            	    break loop7;
                 }
             } while (true);
 
@@ -286,18 +369,18 @@ public class tal_sqlParser extends Parser {
 
 
     // $ANTLR start "param"
-    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:57:1: param returns [Arbre lepar_arbre = new Arbre(\"\")] : a= VAR ;
+    // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:72:1: param returns [Arbre lepar_arbre = new Arbre(\"\")] : a= VAR ;
     public final Arbre param() throws RecognitionException {
         Arbre lepar_arbre =  new Arbre("");
 
         Token a=null;
 
         try {
-            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:57:51: (a= VAR )
-            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:58:2: a= VAR
+            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:72:51: (a= VAR )
+            // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:73:2: a= VAR
             {
-            a=(Token)match(input,VAR,FOLLOW_VAR_in_param288); 
-             lepar_arbre.ajouteFils(new Arbre("mot =", "'"+a.getText()+"'"));
+            a=(Token)match(input,VAR,FOLLOW_VAR_in_param340); 
+             lepar_arbre.ajouteFils(new Arbre("mot LIKE", "'%"+a.getText()+"%'"));
 
             }
 
@@ -317,17 +400,19 @@ public class tal_sqlParser extends Parser {
 
  
 
-    public static final BitSet FOLLOW_requete_in_listerequetes142 = new BitSet(new long[]{0x0000000000000800L});
-    public static final BitSet FOLLOW_POINT_in_listerequetes144 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_SELECT_in_requete171 = new BitSet(new long[]{0x00000000000000C0L});
-    public static final BitSet FOLLOW_TITLE_in_requete178 = new BitSet(new long[]{0x0000000000000300L});
-    public static final BitSet FOLLOW_PAGE_in_requete194 = new BitSet(new long[]{0x0000000000000300L});
-    public static final BitSet FOLLOW_ABOUT_in_requete206 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_DATE_in_requete213 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_params_in_requete224 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_param_in_params252 = new BitSet(new long[]{0x0000000000002402L});
-    public static final BitSet FOLLOW_CONJ_in_params259 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_param_in_params266 = new BitSet(new long[]{0x0000000000002402L});
-    public static final BitSet FOLLOW_VAR_in_param288 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_requete_in_listerequetes152 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_POINT_in_listerequetes154 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_SELECT_in_requete187 = new BitSet(new long[]{0x0000000000000180L});
+    public static final BitSet FOLLOW_COUNT_in_requete195 = new BitSet(new long[]{0x0000000000000180L});
+    public static final BitSet FOLLOW_PAGE_in_requete212 = new BitSet(new long[]{0x0000000000008400L});
+    public static final BitSet FOLLOW_UNE_in_requete220 = new BitSet(new long[]{0x0000000000008400L});
+    public static final BitSet FOLLOW_ABOUT_in_requete241 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_params_in_requete260 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_param_in_params288 = new BitSet(new long[]{0x0000000000009802L});
+    public static final BitSet FOLLOW_CONJ_AND_in_params295 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_param_in_params302 = new BitSet(new long[]{0x0000000000009802L});
+    public static final BitSet FOLLOW_CONJ_OR_in_params311 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_param_in_params318 = new BitSet(new long[]{0x0000000000009002L});
+    public static final BitSet FOLLOW_VAR_in_param340 = new BitSet(new long[]{0x0000000000000002L});
 
 }

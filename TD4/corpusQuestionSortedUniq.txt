@@ -1,9 +1,15 @@
 
 Je veux les articles possédant le terme juge.
-SELECT TRASH PAGE ABOUT juge
+$TRASH $SELECT $TRASH $PAGE $ABOUT $TRASH $TRASH juge.
+
+Je veux les articles possédant le terme juge et plouf.
+$TRASH $SELECT $TRASH $PAGE $ABOUT $TRASH $TRASH juge et plouf.
 
 Combien de Une parle du Pape ?
-HOW_MANY __ UNE ABOUT __ Pape
+SELECT COUNT(*) FROM titreresume WHERE rubrique = 'Une' AND mot LIKE = 'Pape';
+$COUNT $TRASH $UNE $ABOUT $TRASH Pape
+
+
 
 Combien de UNE concernent l'Irak?
 HOW_MANY __ UNE ABOUT __ Irak

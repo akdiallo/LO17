@@ -6,32 +6,35 @@ import org.antlr.runtime.ANTLRReaderStream;
 import org.antlr.runtime.CommonTokenStream;
 
 public class TalMain3 {
-	
+
 	private HashMap<String, String> hash;
 	private String[] inputs;
-	
-	public static void main(String args[]) throws Exception {
+
+	public static void main(String args[]) {
 		Scanner scanner = new Scanner(System.in);
 		String s = "";
 		while (!s.equals("*")) {
-			System.out.print("Texte : ");
-			s = scanner.nextLine();
-			s = normalisation(s);
-			tal_sqlLexer lexer = new tal_sqlLexer(new ANTLRReaderStream(new StringReader(s)));
-			CommonTokenStream tokens = new CommonTokenStream(lexer);
-			tal_sqlParser parser = new tal_sqlParser(tokens);
-			String arbre = parser.listerequetes();
-			System.out.println(arbre);
+			try{
+				System.out.print("\n\nTexte : ");
+				s = scanner.nextLine();
+				s = normalisation(s);
+				tal_sqlLexer lexer = new tal_sqlLexer(new ANTLRReaderStream(new StringReader(s)));
+				CommonTokenStream tokens = new CommonTokenStream(lexer);
+				tal_sqlParser parser = new tal_sqlParser(tokens);
+				String arbre = parser.listerequetes();
+				System.out.println(arbre);
+			}
+			catch(Exception e) {  }
 		}
 	}
-	
+
 	private static String normalisation(String s) throws IOException {
 		System.out.println("Phrase d'origine: "+s);
-		
+
 		//Normalisation
-		
+
 		//import in hashmap
-		BufferedReader br = new BufferedReader(new FileReader("/Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/VARIABLEGLOBALES.txt"));
+		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("/Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/VARIABLEGLOBALES.txt"), "UTF8"));
 		String line;
 		String GLOBALE = "";
 		HashMap<String,String>norm_hash = new HashMap<String, String>();
@@ -43,7 +46,7 @@ public class TalMain3 {
 			}
 		}
 		br.close();
-		
+
 		//norm action
 		String[] tmp = s.split(" ", -1);
 		String[] inputs = new String[tmp.length];
@@ -55,20 +58,21 @@ public class TalMain3 {
 		for (int i = 0; i < inputs.length; i++) {
 			var = norm_hash.get(inputs[i]);
 			if (var != null && var.length()>0)
-				normalisation += '$'+var+'$';
+				normalisation += '$'+var;
 			else
 				normalisation += inputs[i];
 			normalisation += " ";
 		}
-		
+
 		System.out.println("Normalisation: "+normalisation);
-		
+
 		//Lemmatisation
 		Lemmatisation lemmatisation = new Lemmatisation(normalisation);
 		String lemme = lemmatisation.getLemmes();
+		lemme = lemme.substring(0, lemme.length() - 2);
+		lemme = lemme + '.';
 		System.out.println("Lemmatisation: "+lemme);
-
-		return lemme+'.';
+		return lemme;
 	}
 }
 
