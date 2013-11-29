@@ -9,23 +9,25 @@ public class TalMain3 {
 
 	private HashMap<String, String> hash;
 	private String[] inputs;
-
-	public static void main(String args[]) {
-		Scanner scanner = new Scanner(System.in);
-		String s = "";
-		while (!s.equals("*")) {
-			try{
-				System.out.print("\n\nTexte : ");
-				s = scanner.nextLine();
-				s = normalisation(s);
-				tal_sqlLexer lexer = new tal_sqlLexer(new ANTLRReaderStream(new StringReader(s)));
-				CommonTokenStream tokens = new CommonTokenStream(lexer);
-				tal_sqlParser parser = new tal_sqlParser(tokens);
-				String arbre = parser.listerequetes();
-				System.out.println(arbre);
-			}
-			catch(Exception e) {  }
+	private String requete;
+	private String arbre;
+	
+	public TalMain3(String s) {
+		this.requete = s;
+		try{
+			System.out.print("\n\nTexte : ");
+			s = normalisation(s);
+			tal_sqlLexer lexer = new tal_sqlLexer(new ANTLRReaderStream(new StringReader(s)));
+			CommonTokenStream tokens = new CommonTokenStream(lexer);
+			tal_sqlParser parser = new tal_sqlParser(tokens);
+			this.arbre = parser.listerequetes();
+			System.out.println(this.arbre);
 		}
+		catch(Exception e) {  }
+	}
+	
+	public String getArbre() {
+		return this.arbre;
 	}
 
 	private static String normalisation(String s) throws IOException {

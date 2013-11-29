@@ -26,9 +26,12 @@ listerequetes returns [String sql = ""]
 requete returns [Arbre req_arbre = new Arbre("")]
 	@init {Arbre ps_arbre;} : 
 		(
-		  SELECT {req_arbre.ajouteFils(new Arbre("","select distinct"));}
+		  SELECT {req_arbre.ajouteFils(new Arbre("","select distinct article"));}
+		  
+		)
 		| COUNT {req_arbre.ajouteFils(new Arbre("","select count(*)"));}
 		)
+		
 
 		(
 		  PAGE {req_arbre.ajouteFils(new Arbre("","from titreresume"));}
