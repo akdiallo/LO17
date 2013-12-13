@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g 2013-11-29 14:02:56
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g 2013-11-29 14:43:23
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -113,7 +113,7 @@ public class tal_sqlParser extends Parser {
                     // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:29:5: SELECT
                     {
                     match(input,SELECT,FOLLOW_SELECT_in_requete187); 
-                    req_arbre.ajouteFils(new Arbre("","select distinct page, rubrique"));
+                    req_arbre.ajouteFils(new Arbre("","select distinct article"));
 
                     }
                     break;
@@ -159,7 +159,7 @@ public class tal_sqlParser extends Parser {
                     match(input,UNE,FOLLOW_UNE_in_requete223); 
 
                     			req_arbre.ajouteFils(new Arbre("","from titreresume"));
-                    			req_arbre.ajouteFils(new Arbre("","rubrique = 'une'"));
+                    			req_arbre.ajouteFils(new Arbre("","where rubrique = 'une'"));
 
                     }
                     break;

@@ -27,8 +27,6 @@ requete returns [Arbre req_arbre = new Arbre("")]
 	@init {Arbre ps_arbre;} : 
 		(
 		  SELECT {req_arbre.ajouteFils(new Arbre("","select distinct article"));}
-		  
-		)
 		| COUNT {req_arbre.ajouteFils(new Arbre("","select count(*)"));}
 		)
 		
@@ -37,7 +35,7 @@ requete returns [Arbre req_arbre = new Arbre("")]
 		  PAGE {req_arbre.ajouteFils(new Arbre("","from titreresume"));}
 		| UNE {
 			req_arbre.ajouteFils(new Arbre("","from titreresume"));
-			req_arbre.ajouteFils(new Arbre("","rubrique = 'une'"));}
+			req_arbre.ajouteFils(new Arbre("","where rubrique = 'une'"));}
 		)
 		
 		(

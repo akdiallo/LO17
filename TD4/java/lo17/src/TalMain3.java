@@ -50,7 +50,7 @@ public class TalMain3 {
 		br.close();
 
 		//norm action
-		String[] tmp = s.split(" ", -1);
+		String[] tmp = s.replaceAll("'", " ").split(" ", -1);
 		String[] inputs = new String[tmp.length];
 		for (int i=0; i<tmp.length;i++){
 			inputs[i]=tmp[i].trim().toLowerCase();

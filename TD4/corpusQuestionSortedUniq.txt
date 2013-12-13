@@ -1,5 +1,5 @@
 
-Je veux les articles possédant le terme juge.
+Je veux les articles possŽdant le terme juge.
 $TRASH $SELECT $TRASH $PAGE $ABOUT $TRASH $TRASH juge.
 
 Je veux les articles possédant le terme juge et plouf.

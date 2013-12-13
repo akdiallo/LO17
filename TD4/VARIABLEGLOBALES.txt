@@ -20,6 +20,11 @@
 	moi
 	ensemble
 	l'ensemble
+	l
+	d
+	a
+	fois
+	à
  $TITLE
 	titre
  $UNE
@@ -67,6 +72,7 @@
 	traite
 	traitent
 	traitants
+	traitant
 	qui parlent
 	font référence
 	porte sur
@@ -84,6 +90,7 @@
 	mot
 	possédant
 	possédant le terme
+	possedant
  $COUNT
 	combien
  $AUTHOR
