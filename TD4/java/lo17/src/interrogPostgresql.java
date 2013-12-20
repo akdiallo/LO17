@@ -15,6 +15,8 @@ public class interrogPostgresql  {
 	String nom;
 	int nbre;
 	
+	//Je veux les articles possedant le terme juge.
+	
 	// ---- configure START
 	username = "lo17xxx";
 	password = "dblo17";
