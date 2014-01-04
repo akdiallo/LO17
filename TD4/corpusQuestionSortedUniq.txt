@@ -1,242 +1,239 @@
-
-Je veux les articles possédant le terme juge.
-$TRASH $SELECT $TRASH $PAGE $ABOUT $TRASH $TRASH juge.
-
-Je veux les articles possÈdant le terme juge et plouf.
-$TRASH $SELECT $TRASH $PAGE $ABOUT $TRASH $TRASH juge et plouf.
-
 Combien de Une parle du Pape ?
-SELECT COUNT(*) FROM titreresume WHERE rubrique = 'Une' AND mot LIKE = 'Pape';
-$COUNT $TRASH $UNE $ABOUT $TRASH Pape
-
-
-
 Combien de UNE concernent l'Irak?
-HOW_MANY __ UNE ABOUT __ Irak
-
-Combien d'auteurs ont Ècrit un article parlant d'attentats ?
-HOW_MANY AUTHOR ABOUT article ABOUT d'attentats
-
-Donne moi l'ensemble des titres concernant la politique.
-SELECT TRASH TRASH TITLE ABOUT TRASH politique
-
-++ Donne moi la liste des dates des articles traitant du Pape.
-SELECT TRASH TRASH TRASH DATE TRASH PAGE ABOUT TRASH pape
-
-Donnez-moi les gros titres qui parlent du cyclone Katrina.
-SELECT TRASh PAGE TRASH ABOUT TRASH cyclone Katrina
-
-Je veux la liste de toutes les unes de fÈvrier 2005
-SELECT TRASH TRASH TRASH TRASH PAGE TRASH DATE
-
-Articles Ècrits en septembre 2005 qui parlent du 11 septembre ?
-Combien d'articlent traitent d'un rÈfÈrendum aux Pays-Bas.
-Combien d'articles de l'AFP traitent de Florence Aubenas?
-Combien d'articles font rÈfÈrence ‡ des attentats en Irak?
-Combien d'articles porte sur les USA et sur l'Irak en mÍme temps ?
-Combien d'articles proviennent de l'AFP?
-Combien d'articles traitent d'accidents aÈriens ?
+Combien de Focus porte sur l'Italie ?
+Combien de Focus porte sur les USA  ?
+Combien de FOCUS parlent de Bush?
 Combien d'articles traitent de l'Irak?
-Combien d'articles traitent de la politique ÈtrangÈre des Etats-Unis en 2005 ?
+Combien de fois le mot Vatican est apparu dans les rappels ?
+Combien de gros titres font reference a Qaida ?
+Combien de rappels traitent de Silvio Berlusconi?
+Je veux les articles poss√©dant le terme juge.
+Je veux les articles possedant le terme juge et plouf.
+Je veux les auteurs des articles parlant du pape ?
+Je veux les auteurs des unes parlant du pape
+Combien d‚Äôarticles a √©crit dstraus@tf1.fr
+Combien de unes a √©crit dstraus@tf1.fr
+Combien de focus a √©crit dstraus@tf1.fr
+# Combien de gros titres a √©crit dstraus@tf1.fr
+Combien d'articles proviennent de tf1?
+Combien de unes a √©crit dstraus qui parlent du pape
+Retourner les gros titres parlant du conclave.
+Retourner unes traitant de l'operation du pape.
+Les articles du 9 d√©cembre 2005
+Les articles de d√©cembre 2005
+Les unes de d√©cembre 2005
+Les focus de d√©cembre 2005
+donne Les articles de janvier 2006 parlant de ivoire
+donne Les grostitres de janvier 2006 parlant de ivoire
+
+Articles √©crits en septembre 2005 qui parlent du 11 septembre ?
+Combien d'articlent traitent d'un r√©f√©rendum aux Pays-Bas.
+Combien d'articles de l'AFP traitent de Florence Aubenas?
+Combien d'articles font r√©f√©rence √† des attentats en Irak?
+Combien d'articles porte sur les USA et sur l'Irak en m√™me temps ?
+Combien d'articles proviennent de l'AFP?
+Combien d'articles traitent d'accidents a√©riens ?
+Combien d'articles traitent de l'Irak?
+Combien d'articles traitent de la politique √©trang√©re des Etats-Unis en 2005 ?
 Combien d'articles traitent du Royaume-Uni en 2005 ?
-Combien d'articles traitent du procÈs Jackson ?
-Combien d'articles traitent les fusillades aux Ètats-unis?
-Combien d'articles traitent ‡ la fois de l'Irak et de Bush?
-Combien d'articles Èvoque Berlusconi et le fascisme ?
-Combien d'auteurs diffÈrents on Ècrit des articles entre  le 10 janvier 2005 et le 10 juillet 2005?
-Combien d'auteurs diffÈrents ont Ècrit des articles le 24 octobre 2005 ?
-Combien d'auteurs ont Ècrit un article parlant d'attentats ?
+Combien d'articles traitent du proc√©s Jackson ?
+Combien d'articles traitent les fusillades aux √©tats-unis?
+Combien d'articles traitent √† la fois de l'Irak et de Bush?
+Combien d'articles √©voque Berlusconi et le fascisme ?
+Combien d'auteurs diff√©rents on √©crit des articles entre  le 10 janvier 2005 et le 10 juillet 2005?
+Combien d'auteurs diff√©rents ont √©crit des articles le 24 octobre 2005 ?
+Combien d'auteurs ont √©crit un article parlant d'attentats ?
 Combien de FOCUS parlent de Bush?
 Combien de Focus porte sur l'Italie ?
 Combien de Focus porte sur les USA  ?
 Combien de UNE concernent l'Irak?
 Combien de Une parle du Pape ?
 Combien de Une parue entre le 25 Janvier et le 17 Avril 2006 traite des sujets concernant l'Afrique ?
-Combien de fois est citÈs le mot "mort" et dans quels articles?
+Combien de fois est cit√©s le mot "mort" et dans quels articles?
 Combien de fois l'auteur dont l'adresse mail est dstraus@tf1.fr parle t-il de Florence Aubenas ?
 Combien de fois le mot Vatican est apparu dans les rappels ?
-Combien de gros titres font rÈfÈrence ‡ Al-QaÔda ?
+Combien de gros titres font r√©f√©rence √† Al-Qa√Øda ?
 Combien de gros titres traitant de l'Afghanistan sont parus entre le 21 Mars 2005 et le 31 JUIN 2005
 Combien de jours successifs parle-t-on du pape?
-Combien de pqges traitent du procès de Mickael Jackson pour le mois d'avril 2005 ?
+Combien de pqges traitent du proc¬ès de Mickael Jackson pour le mois d'avril 2005 ?
 Combien de rappels traitent de Silvio Berlusconi?
 Combien de rappels y-a-t-il par page en moyenne ?
 Combien il y t-il d'articles traitants du Pape?
-Combien y a-t-il d'articles sur le thÈme des Etats-Unis traitant de Bush ?
-Comment puis-je contacter l'auteur HervÈ Moustache ?
+Combien y a-t-il d'articles sur le th√©me des Etats-Unis traitant de Bush ?
+Comment puis-je contacter l'auteur Herv√© Moustache ?
 Dans combien d'article parle-t-on du Pape ?
 Dans quelle rubrique apparaissent le plus grands nombre d'articles parlant des Etats-Unis ?
 Dans quelle rubrique parle-t-on le plus de Michael Jackson ?
-Dans quelles pages trouvent-on des articles Ècrits par un auteur dont l'adresse mail est agautier@tf1.fr ?
-Dans quelles sections (grostitre,breve...) les articles sur TÈhÈran apparraissent-ils le plus souvent?
-Dans quels articles est intervenu Nicolas Sarkozy sur le thËme de la dÈfense ?
+Dans quelles pages trouvent-on des articles √©crits par un auteur dont l'adresse mail est agautier@tf1.fr ?
+Dans quelles sections (grostitre,breve...) les articles sur T√©h√©ran apparraissent-ils le plus souvent?
+Dans quels articles est intervenu Nicolas Sarkozy sur le th√®me de la d√©fense ?
 Dans quels articles parlent-t-on de Nicolas Sarkozy ?
-De quand date la derniËre Une ‡ propos de Mickael Jackson ?
+De quand date la derni√®re Une √† propos de Mickael Jackson ?
 De quoi parlait-on le plus du 27 mars au 4 avril 2005 ?
-Donne moi l'ensemble des articles qui traitent ‡ la fois d'Èconomie, de politique et du prÈsident des USA.
+Donne moi l'ensemble des articles qui traitent √† la fois d'√©conomie, de politique et du pr√©sident des USA.
 Donne moi l'ensemble des titres concernant la politique.
-Donne moi la liste des auteurs ayant Ècris au moins de 5 articles sur le thÈme de la Russie
+Donne moi la liste des auteurs ayant √©cris au moins de 5 articles sur le th√©me de la Russie
 Donne moi la liste des dates des articles traitant du Pape.
 Donne moi les articles de 2005 dont l'auteur a pour adresse e-mail fauvert@tf1.fr
 Donne moi les articles en rapport avec la politique de l'Italie.
 Donne moi les titres et les dates des articles traitant de George W. Bush.
-Donne moi tous les article concernant le procËs de Mickael Jackson
-Donne moi tous les articles sur le thÈme de la guerre paru entre le 23 avril 2005 et le 1er Juillet 2005
-Donne moi tous les articles traitant de la menace terroriste Al-QaÔda
-Donne-moi la liste des articules o˘ l'on a parlÈ du prÈsident des Ètats Unis depuis 3 semaines.
+Donne moi tous les article concernant le proc√®s de Mickael Jackson
+Donne moi tous les articles sur le th√©me de la guerre paru entre le 23 avril 2005 et le 1er Juillet 2005
+Donne moi tous les articles traitant de la menace terroriste Al-Qa√Øda
+Donne-moi la liste des articules o√π l'on a parl√© du pr√©sident des √©tats Unis depuis 3 semaines.
 Donne-moi la liste des gros titres parus entre le 10 septembre 2001 et le 12 septembre 2001.
-Donner le thÈme le plus rÈcurrent dans la rubrique Focus parmi ces thÈmes : " La guerre en Irak ", " les attentats ", " les actions humanitaires " et " les visites du Pape "?
+Donner le th√©me le plus r√©current dans la rubrique Focus parmi ces th√©mes : " La guerre en Irak ", " les attentats ", " les actions humanitaires " et " les visites du Pape "?
 Donnez les dates de parution des articles parus dans la rubrique " Le focus " dont le mail de l'auteur est dstraus@tf1.fr ?
 Donnez-moi les gros titres qui parlent du cyclone Katrina.
-Donnez-moi les rÈsumÈs de tous les textes traitant du terrorisme.
-Entre le 12 Septembre et le 17 Octobre 2005, dans la rubrique " Le focus ", combien d'articles ont ÈtÈ Ècrit par Guillaume DEBRE et parlent du pape ?
-Entre quelle date de dÈbut et quelle date de fin sont parrus les articles sur Katrina?
-Existe-t-il un article parlant du SÈnÈgal (apparition improbable d'un sujet donnÈ)?
+Donnez-moi les r√©sum√©s de tous les textes traitant du terrorisme.
+Entre le 12 Septembre et le 17 Octobre 2005, dans la rubrique " Le focus ", combien d'articles ont √©t√© √©crit par Guillaume DEBRE et parlent du pape ?
+Entre quelle date de d√©but et quelle date de fin sont parrus les articles sur Katrina?
+Existe-t-il un article parlant du S√©n√©gal (apparition improbable d'un sujet donn√©)?
 J'aimerais connaitre les dates des articles de l'auteur AFP.
-J'aimerais consulter les articles liÈs ‡ la Belgique.Je voudrais toutes les pages qui parlent de George W.Bush.
-J'aimerais le nombre de une sur Chirac par annÈe.
-Je souhaiterais les articles Ècrit par dstraus@tf1.fr et Ètant contenus dans la Une.
-Je souhaiterais savoir s'il y a des articles qui traitent de "l'Èlection de Jean Sarkozy"
+J'aimerais consulter les articles li√©s √† la Belgique.Je voudrais toutes les pages qui parlent de George W.Bush.
+J'aimerais le nombre de une sur Chirac par ann√©e.
+Je souhaiterais les articles √©crit par dstraus@tf1.fr et √©tant contenus dans la Une.
+Je souhaiterais savoir s'il y a des articles qui traitent de "l'√©lection de Jean Sarkozy"
 Je veux la Une du 3 Mars 2005.
-Je veux la liste de toutes les unes de fÈvrier 2005
-Je veux les 10 derniers articles qui traitent de la crise Èconomique.
+Je veux la liste de toutes les unes de f√©vrier 2005
+Je veux les 10 derniers articles qui traitent de la crise √©conomique.
 Je veux les 5 derniers articles qui traitent de cyclones.
-Je veux les articles datant de FÈvrier et traitant de la capture d'Ingrid Betancourt ?
-Je veux les articles possÈdant le terme juge.
-Je veux les articles sur l'Allemagne Ècrits par Franck Lefebvre.
+Je veux les articles datant de F√©vrier et traitant de la capture d'Ingrid Betancourt ?
+Je veux les articles poss√©dant le terme juge.
+Je veux les articles sur l'Allemagne √©crits par Franck Lefebvre.
 Je veux les articles traitant de l'Irak ou de l'Afghanistan
 Je veux les auteurs des articles parlant du G8 ?
 Je veux les auteurs et leur adresse e-mail des articules d'aujourd'hui.
 Je veux les gros titres et les rappels traitant de Guantanamo ou de l'Irak ou de Bush.
-Je veux les unes de chaque dÈbut de mois.
-Je veux savoir le nombre d'articles sur le pape Ècrits en 2004.
-Je veux tous les articles concernant la politique de Bush pour l'annÈe 2005
-Je veux tous les articles Ècrit par Jean-Michel-Michel.
-Je veux tous les auteurs ayant Ècrit des articles sur l'Irak.
-Je voudrais l'auteur d'article dont le rÈsumÈ contient le mot chiite.
+Je veux les unes de chaque d√©but de mois.
+Je veux savoir le nombre d'articles sur le pape √©crits en 2004.
+Je veux tous les articles concernant la politique de Bush pour l'ann√©e 2005
+Je veux tous les articles √©crit par Jean-Michel-Michel.
+Je veux tous les auteurs ayant √©crit des articles sur l'Irak.
+Je voudrais l'auteur d'article dont le r√©sum√© contient le mot chiite.
 Je voudrais la liste des articles dont la section LES_RAPPELS porte sur la Cisjordanie?
-Je voudrais la liste des articles entre le 3 mars 2005 et le 12 aout 2005 qui ont ÈtÈ Ècrit par l'auteur dont le mail est agautier@tf1.fr? 
-Je voudrais la liste des auteurs qui ont Ècrit des articles portant sur le Terrorisme?
+Je voudrais la liste des articles entre le 3 mars 2005 et le 12 aout 2005 qui ont √©t√© √©crit par l'auteur dont le mail est agautier@tf1.fr? 
+Je voudrais la liste des auteurs qui ont √©crit des articles portant sur le Terrorisme?
 Je voudrais la liste des dates et des articles qui portent sur GAZA? 
-Je voudrais le dernier article traitant de la prÈsidence franÁaise.
+Je voudrais le dernier article traitant de la pr√©sidence fran√ßaise.
 Je voudrais les articles focus traitant de la Bolivie
 Je voudrais les articles qui parlent de Michael Jackson.
 Je voudrais les articles qui parlent de religion mais pas de catholicisme.
-Je voudrais les articles traitant de l'Irak et Èventuellement de Saddam Hussein
+Je voudrais les articles traitant de l'Irak et √©ventuellement de Saddam Hussein
 Je voudrais les liens vers les unes traitant du conflit israelo-palestinien.
-Je voudrais les unes parus entre le 2 fÈvrier 2005 et le 10 octobre 2005  traitant de Saddam Hussein.
-Je voudrais tous les articles parus entre le 22 FÈvrier 2005 et le 20 Avril 2005 qui parlent de l'industrie du disque.
+Je voudrais les unes parus entre le 2 f√©vrier 2005 et le 10 octobre 2005  traitant de Saddam Hussein.
+Je voudrais tous les articles parus entre le 22 F√©vrier 2005 et le 20 Avril 2005 qui parlent de l'industrie du disque.
 Je voudrais tous les gros titre de 2006 sur l'Irak.
-Je voudrais tous les rÈsumÈs des ÈvÈnements datant de moins de 15 jours.
-Je voudrais toutes les pages qui parlent des activitÈs de Barack Obama.
+Je voudrais tous les r√©sum√©s des √©v√©nements datant de moins de 15 jours.
+Je voudrais toutes les pages qui parlent des activit√©s de Barack Obama.
 Je voudrais toutes les photos concernant Bachar el-Assad.
-L'auteur Olivier CORRIEZ ‡ Ècrit combien d'article concernant la pop star amÈricaine Mickael Jackson ?
-La santÈe est-elle un thËme souvent abordÈ ?
-Le pape est-il allÈ en Jordanie  ?
-Liste des articles qui parlent de l'homosexualitÈ.
-O˘ se sont dÈroulÈs les JO d'Hiver de 2006?
-Parle-t-on dans le meme jour d'un attentat en Irak et du pape dans une mÍme Une ?
+L'auteur Olivier CORRIEZ √† √©crit combien d'article concernant la pop star am√©ricaine Mickael Jackson ?
+La sant√©e est-elle un th√®me souvent abord√© ?
+Le pape est-il all√© en Jordanie  ?
+Liste des articles qui parlent de l'homosexualit√©.
+O√π se sont d√©roul√©s les JO d'Hiver de 2006?
+Parle-t-on dans le meme jour d'un attentat en Irak et du pape dans une m√™me Une ?
 Parle-t-on de Sarkozy dans une des news ?
-Pendant combien de jours a-t-on traitÈ de la mort du pape ?
+Pendant combien de jours a-t-on trait√© de la mort du pape ?
 Pendant combien de jours parle-t-on du pape successivement ?
-Quand Bush s'est il opposÈ ‡ l'euthanasie?
-Quel auteur a Ècrit le plus d'articles concernant les colons de Ghaza, et combien en a-t-il Ècrit ?
-Quel est l'auteur qui a le plus publiÈ ?
-Quel est l'auteur qui a Ècrit le plus d'article sur Al-Qaida
-Quel est l'auteur qui a Ècrit le plus d'articles sur Bush?
-Quel est l'auteur qui a Ècrit le plus de Une?
+Quand Bush s'est il oppos√© √† l'euthanasie?
+Quel auteur a √©crit le plus d'articles concernant les colons de Ghaza, et combien en a-t-il √©crit ?
+Quel est l'auteur qui a le plus publi√© ?
+Quel est l'auteur qui a √©crit le plus d'article sur Al-Qaida
+Quel est l'auteur qui a √©crit le plus d'articles sur Bush?
+Quel est l'auteur qui a √©crit le plus de Une?
 Quel est la date du dernier article sur Sarkozy?
-Quel est le nombre d'article parlant de Jean Paul II sur les 12 mois de l'annÈe 2005 ?
+Quel est le nombre d'article parlant de Jean Paul II sur les 12 mois de l'ann√©e 2005 ?
 Quel est le nombre d'articles parus dans le Une dont on reparle dans Les rappels ?
 Quel est le plus ancien article sur le Pape?
-Quel est le premier article parlant de la CorÈe?
-Quel est le thÈme le plus prÈsent dans les news en dÈcembre 2005 ?
-Quel pourcentage d'article, ayant pour thËme la Russie, parlent de Vladimir Poutine ?
-Quel sont les gros titres dont le thÈme est l'Irak ?
-Quel sont les jours o˘ l'AFP n'a pas Ècrit d'articles ?
-Quelle annÈe a le plus traitÈ de politique ?
-Quelle est l'annÈe durant laquelle on a le plus parlÈ de Bush?
+Quel est le premier article parlant de la Cor√©e?
+Quel est le th√©me le plus pr√©sent dans les news en d√©cembre 2005 ?
+Quel pourcentage d'article, ayant pour th√®me la Russie, parlent de Vladimir Poutine ?
+Quel sont les gros titres dont le th√©me est l'Irak ?
+Quel sont les jours o√π l'AFP n'a pas √©crit d'articles ?
+Quelle ann√©e a le plus trait√© de politique ?
+Quelle est l'ann√©e durant laquelle on a le plus parl√© de Bush?
 Quelle est la date de parution de l'article dont le titre est : " "No smoking" dans les pubs" ?
-Quelle est la liste des articles Ècrits par l'auteur dont le mail est faubert@tf1.fr?
-Quelle est la liste des auteurs ayant Ècrits un article sur schroeder ?
+Quelle est la liste des articles √©crits par l'auteur dont le mail est faubert@tf1.fr?
+Quelle est la liste des auteurs ayant √©crits un article sur schroeder ?
 Quelle est la page la plus ancienne parlant de George Bush ?
-Quelle est la page la plus rÈcente parlant de la guerre en Irak ?
+Quelle est la page la plus r√©cente parlant de la guerre en Irak ?
 Quelle est la proportion d'articles sur l'Irak traitant des attentats ?
-Quelle est la pÈriode des articles parlant de la rencontre entre Bush et Poutine ?
-Quelle est le nombre de gros titres o˘ apparraissent des informations sur Ariel Sharon?
+Quelle est la p√©riode des articles parlant de la rencontre entre Bush et Poutine ?
+Quelle est le nombre de gros titres o√π apparraissent des informations sur Ariel Sharon?
 Quelles articles parle de la relation entre Bush et Poutine
-Quelles pages traitent des attentats ‡ Baghdad.
-Quelles sont les articles concernant les catastrophe climatiques et mÈtÈorologiques aux Etats-Unis
+Quelles pages traitent des attentats √† Baghdad.
+Quelles sont les articles concernant les catastrophe climatiques et m√©t√©orologiques aux Etats-Unis
 Quelles sont les articles parus en Avril 2005 et qui traitent de l'agriculture? 
-Quelles sont les articles traitant de l'opÈration de Pape
-Quelles sont les dates des articles dans lesquels Jacques Chirac est citÈ pour le thËme de la justice ?
-Quelles sont les dates et les articles dans lesquels Tony blair est mentionnÈ?
+Quelles sont les articles traitant de l'op√©ration de Pape
+Quelles sont les dates des articles dans lesquels Jacques Chirac est cit√© pour le th√®me de la justice ?
+Quelles sont les dates et les articles dans lesquels Tony blair est mentionn√©?
 Quelles sont les pages traitant de Mickael Jackson ?
 Quelles sont les sections des articles qui parlent du pape entre le 1 janvier 2005 et le 12 juin 2005?
 Quels est l'auteur du plus grand nombre d'article apparus dans la rubrique " Le focus "
-Quels mots sont les plus souvent associÈs ‡ Paris ?
-Quels sont les 2 auteurs qui ont Ècrits le plus d'articles qui ont fait la une ?
+Quels mots sont les plus souvent associ√©s √† Paris ?
+Quels sont les 2 auteurs qui ont √©crits le plus d'articles qui ont fait la une ?
 Quels sont les UNEs parus le 10 octobre 2003 ?
-Quels sont les article parlant d'enlËvement autre que celui de Florence Aubenas ?
-Quels sont les articles ayant pour thËme le Proche-Orient ont ÈtÈ rÈdigÈs par l'AFP ?
-Quels sont les articles ayant pour thÈme les Etats-Unis ?
+Quels sont les article parlant d'enl√®vement autre que celui de Florence Aubenas ?
+Quels sont les articles ayant pour th√®me le Proche-Orient ont √©t√© r√©dig√©s par l'AFP ?
+Quels sont les articles ayant pour th√©me les Etats-Unis ?
 Quels sont les articles contenant les mots " accident " et " routier " ?
-Quels sont les articles et brÈves qui traitent des cyclones entre 2005 et 2006?
-Quels sont les articles et les dates o˘ l'on mentionne le mot "kamikaze"?
-Quels sont les articles o˘ le mot Guerre apparait dans le titre et non le mot Irak ?
-Quels sont les articles parlant d'Èconomie?
-Quels sont les articles parlant de film dans leur rÈsumÈ ?
-Quels sont les articles portant sur l'Irak et Ètant Ècrit entre le 10 janvier 2005 et le 5 avril 2005 ?
-Quels sont les articles portant sur le thËme de l'Èconomie en juillet 2004 ?
-Quels sont les articles qui font rÈference ‡ la guerre au liban?
+Quels sont les articles et br√©ves qui traitent des cyclones entre 2005 et 2006?
+Quels sont les articles et les dates o√π l'on mentionne le mot "kamikaze"?
+Quels sont les articles o√π le mot Guerre apparait dans le titre et non le mot Irak ?
+Quels sont les articles parlant d'√©conomie?
+Quels sont les articles parlant de film dans leur r√©sum√© ?
+Quels sont les articles portant sur l'Irak et √©tant √©crit entre le 10 janvier 2005 et le 5 avril 2005 ?
+Quels sont les articles portant sur le th√®me de l'√©conomie en juillet 2004 ?
+Quels sont les articles qui font r√©ference √† la guerre au liban?
 Quels sont les articles qui parlent de Micheal Jackson?
 Quels sont les articles qui parlent de l'Irak dans la rubrique " Gros titres " ?
-Quels sont les articles qui parlent de l'Èconomie mais pas de la politique?
-Quels sont les articles qui parlent de l'Èducation des enfants ?
+Quels sont les articles qui parlent de l'√©conomie mais pas de la politique?
+Quels sont les articles qui parlent de l'√©ducation des enfants ?
 Quels sont les articles qui parlent de la guerre en Irak ?
-Quels sont les articles qui parlent de procÈs?
+Quels sont les articles qui parlent de proc√©s?
 Quels sont les articles qui traitent d'Israel?
-Quels sont les articles qui traitent de la compagne prÈsidentielle de Nicolas Sarkozy ?
-Quels sont les articles qui traitent du pape entre le 18 fÈvrier et le 30 mars 2005 ?
+Quels sont les articles qui traitent de la compagne pr√©sidentielle de Nicolas Sarkozy ?
+Quels sont les articles qui traitent du pape entre le 18 f√©vrier et le 30 mars 2005 ?
 Quels sont les articles relatifs au Royaume Uni dans lesquels on parle de Jacques Chirac ?
-Quels sont les articles sur la libÈration de Florence Aubenas ?
+Quels sont les articles sur la lib√©ration de Florence Aubenas ?
 Quels sont les articles traitant du Moyen-Orient ?
-Quels sont les articles Ècrits par Fabrice Aubert ?
-Quels sont les articles Ècrits par l'auteur ayant l'adresse email jean-michel-michel@dikenek.be ?
-Quels sont les auteurs qui ont Ècrit le plus d'article ce mois-ci ?
-Quels sont les focus sur l'UE Ècrits entre septembre 2005 et dÈcembre 2005 ?
+Quels sont les articles √©crits par Fabrice Aubert ?
+Quels sont les articles √©crits par l'auteur ayant l'adresse email jean-michel-michel@dikenek.be ?
+Quels sont les auteurs qui ont √©crit le plus d'article ce mois-ci ?
+Quels sont les focus sur l'UE √©crits entre septembre 2005 et d√©cembre 2005 ?
 Quels sont les gros titres concernant le Vatican ?
 Quels sont les mails des auteurs des articles sur le Pape ?
 Quels sont les pages dont la Une et au moins un article de la rubrique " Gros titres " portent sur Michael Jackson ?
-Quels sont les thÈmes les plus abordÈs par Fabrice Aubert?
-Quels sont les thÈmes les plus souvent traitÈs par Fabrice Aubert ?
-Quels sont les titres des articles Ècrits par Guillaume DEBRE dans la rubrique Gros titre et traitant de la libÈration de BETANCOURT ?
-Quels sont les titres des articles Ècrits par Guillaume DEBRE entre le 31 Mars et le 14 Avril ?
+Quels sont les th√©mes les plus abord√©s par Fabrice Aubert?
+Quels sont les th√©mes les plus souvent trait√©s par Fabrice Aubert ?
+Quels sont les titres des articles √©crits par Guillaume DEBRE dans la rubrique Gros titre et traitant de la lib√©ration de BETANCOURT ?
+Quels sont les titres des articles √©crits par Guillaume DEBRE entre le 31 Mars et le 14 Avril ?
 Quels sont les titres en relation avec les attentats du 11 Septembre 2001?
 Quels sont les unes de septembre 2005 ?
-Qui a kidnappÈ Florence Aubenas ?
-Qui a Ècrit l'article intitulÈ "Michael Jackson va pouvoir s'expliquer" et quand est-il apparut ?
+Qui a kidnapp√© Florence Aubenas ?
+Qui a √©crit l'article intitul√© "Michael Jackson va pouvoir s'expliquer" et quand est-il apparut ?
 Qui sont les auteurs d'article dont le titre contient le mot Palestine ?
-Qui sont les auteurs qui ont Ècrit des articles dont la UNE porte sur l'Afghanistan?
-Qui ‡ kidnappÈ Mme Aubenas ?
-Retourner l'article le plus rÈcent sur le conflit au proche orient.
+Qui sont les auteurs qui ont √©crit des articles dont la UNE porte sur l'Afghanistan?
+Qui √† kidnapp√© Mme Aubenas ?
+Retourner l'article le plus r√©cent sur le conflit au proche orient.
 Retourner les auteurs des articles traitant des droits de l'homme en Chine.
 Retourner les auteurs traitant des otages en Afghanistan entre avril et septembre 2005.
-Retourner les gros titres d'articles parus entre le 12 fÈvrier 2005 et le 3 mars 2005.
+Retourner les gros titres d'articles parus entre le 12 f√©vrier 2005 et le 3 mars 2005.
 Retourner les gros titres et les dates d'articles traitant de la Chine.
 Retourner les gros titres parlant du conclave.
 Retourner les titres d'articles et leurs auteurs parlant de Chirac et du Japon.
 Retourner les titres d'articles traitant de Fidel Castro.
-Sur l'ensemble du corpus quelle est la proportion de rÈsumÈ de gros titre avec le mot mort ?
+Sur l'ensemble du corpus quelle est la proportion de r√©sum√© de gros titre avec le mot mort ?
 Y a-t-il  des articles qui traitent du nouvelle ordre mondiale ?
-Y-a-t-il eu plusieurs attentats dans la mÍme journÈe ?
+Y-a-t-il eu plusieurs attentats dans la m√™me journ√©e ?
 Y-a-t-il un Focus dans chaque page ?
-combien d'adresses diffÈrentes pour le domaine @tf1.fr dans le corpus ?
+combien d'adresses diff√©rentes pour le domaine @tf1.fr dans le corpus ?
 combien d'articles ont pour theme l'UE ?
 combien d'articles parlent sur Tony Blair ?
 combien de gros titre sur le pape ?
-combien y a-t-il d'article Ècrit par David STRAUS ?
-combien y a-t-il de thËmes diffÈrents ?
+combien y a-t-il d'article √©crit par David STRAUS ?
+combien y a-t-il de th√®mes diff√©rents ?
 je veux la liste des articles qui parlent de bush et usa et de la Franceet de Washington
 je veux la liste des articles qui parlent de bush et usa ou de la France
 je veux la liste des pages dont l'email de l'auteur est dstrauss@tf et qui parlent de Bush ou de la France
@@ -245,11 +242,11 @@ je veux la liste des pages dont les email des auteurs sont faubert@tf1.fr ou dst
 quel est le nombre d'articles  dont l'email de l'auteur est dstrauss@tf ?
 quel est le nombre d'articles dont l'email de l'auteur est dstrauss@tf et qui sont parus entre le  14 juin 2005 et le 31 septembre 2005 ?
 quel est le nombre d'attentats parus entre le 25 janvier 2005 et le 31mars 2005 ?
-quel jour est survenu la gigantesque panne d'ÈlectricitÈ de Los Angeles ?
+quel jour est survenu la gigantesque panne d'√©lectricit√© de Los Angeles ?
 quel sont les articles parlant de la censure au liban au cour des 3 premiers mois de 2005 ?
-quels est l'adresse des auteurs ayant travaillÈs avec "F. A." ? 
+quels est l'adresse des auteurs ayant travaill√©s avec "F. A." ? 
 quels sont les articles qui parlent d'attentats ?
 quels sont les auteurs des articles sur Ben Laden ou Mohamet ?
 quels sont les focus parlant d'attentat et de mort mais pas des Etats-Unis ?
 quels sont les pages contenant plus de 3 "voirs aussi" ?
-¿ partir de quelle date a-t-on parlÈ de Florence Aubenas ?
+√Ä partir de quelle date a-t-on parl√© de Florence Aubenas ?

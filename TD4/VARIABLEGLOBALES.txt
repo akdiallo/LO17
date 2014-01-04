@@ -1,5 +1,7 @@
  $TRASH
-	d'
+	d’un
+	un
+	aux
 	dans
 	?
 	.
@@ -25,23 +27,13 @@
 	a
 	fois
 	à
- $TITLE
-	titre
- $UNE
-	une
-	unes
- $PAGE
-	focus
-	article
-	articles
-	gros titres
-	articlent
-	focus
-	rappels
-	gros titres
-	pages
-	titre
-	titres
+	il
+	y
+	a
+	est
+	font
+	t-il
+	sont
  $SELECT
  	donne
 	donne-moi
@@ -51,22 +43,46 @@
 	existe-t-il
 	y a-t-il
 	j'aimerais
-	je souhaiterais
-	je veux
-	je voudrais
-	retourner
-	quel est
-	quels sont
-	quelle est
-	quelles sont
+	souhaiterais
 	veux
- $DATE
-	date
-	dates
-	janvier .. decembre
-	2005 .. NUMBERS
-	entre le
-	depuis q
+	voudrais
+	retourner
+	quel
+	quels
+	quelle
+	quelles
+	veux
+ $COUNT
+	combien
+ $UNE
+	une
+	unes
+ $FOCUS
+	focus
+ $GROSTITRE
+	grostitres
+	grostitre
+	gros
+	titres
+	titre
+ $BREVE
+	breve
+	breves
+	brève
+	brèves
+	rappels
+	rappel
+ $VOIRAUSSI
+	voir aussi
+	aussi
+	voir
+ $PAGE
+	article
+	articles
+	articlent
+	pages
+	d’article
+	d’articles
  $ABOUT
 	écrits
 	traite
@@ -78,12 +94,16 @@
 	porte sur
 	sur
 	évoque
+	concernent
+	concernes
+	concerne
 	concernant
 	dont le sujet
 	dont le thème
 	sur le theme
 	parle
 	parlant
+	parlent
 	parlait-on
 	parle-t-on
 	contenir
@@ -91,7 +111,15 @@
 	possédant
 	possédant le terme
 	possedant
- $COUNT
-	combien
+	possèdant
+	propos
+	porte
+	apparu
+	reference
+	référence
  $AUTHOR
+	auteur
+	auteurs
+	écrit
+	écris
 	proviennent

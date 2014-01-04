@@ -23,7 +23,10 @@ public class interrogPostgresql  {
 	// The URL that will connect to TECFA's MySQL server
 	// Syntax: jdbc:TYPE:machine:port/DB_NAME
 	url = "jdbc:postgresql://tuxa.sme.utc/dblo17";
-
+	//username = "Romain";
+	//password = "";
+	//url = "jdbc:postgresql://localhost:5432/lo17";
+		
 	String requete;
 	
 	Scanner scanner = new Scanner(System.in);
