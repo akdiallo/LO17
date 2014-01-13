@@ -1,6 +1,21 @@
+Combien de focus a écrit dstraus qui parlent du pape
 Combien de Une parle du Pape ?
 Combien de UNE concernent l'Irak?
 Combien de Focus porte sur l'Italie ?
+Combien de fois dans les rappels le mot Vatican est il apparu ?
+Je veux les auteurs des unes parlant du pape
+Combien de focus a écrit dstraus
+Combien de focus a écrit dstraus sur le pape 
+Combien de focus a écrit tf
+Combien de rappels traitent de Silvio Berlusconi?
+Donne les articles du 09 décembre 2005
+Donne les unes du 12 décembre 2005
+Combien d'articles traitent du procès Jackson ?
+Combien d'articles traitent à la fois de l'Irak et de Bush?
+Retourner les auteurs des articles traitant de la Chine.
+Je veux les unes de février 2005 parlant des Libanais rassemblés à beyrouth.
+
+
 Combien de Focus porte sur les USA  ?
 Combien de FOCUS parlent de Bush?
 Combien d'articles traitent de l'Irak?
@@ -14,7 +29,7 @@ Je veux les auteurs des unes parlant du pape
 Combien d’articles a écrit dstraus@tf1.fr
 Combien de unes a écrit dstraus@tf1.fr
 Combien de focus a écrit dstraus@tf1.fr
-# Combien de gros titres a écrit dstraus@tf1.fr
+Combien de gros titres a écrit dstraus@tf1.fr
 Combien d'articles proviennent de tf1?
 Combien de unes a écrit dstraus qui parlent du pape
 Retourner les gros titres parlant du conclave.
@@ -25,7 +40,6 @@ Les unes de décembre 2005
 Les focus de décembre 2005
 donne Les articles de janvier 2006 parlant de ivoire
 donne Les grostitres de janvier 2006 parlant de ivoire
-
 Articles écrits en septembre 2005 qui parlent du 11 septembre ?
 Combien d'articlent traitent d'un référendum aux Pays-Bas.
 Combien d'articles de l'AFP traitent de Florence Aubenas?

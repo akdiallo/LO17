@@ -17,8 +17,8 @@ public class TalMain3 {
 	public TalMain3(String s) {
 		this.requete = s;
 		try{
-			System.out.print("\n\nTexte : ");
-			System.out.println("Phrase d'origine: "+s);
+			//System.out.print("\n\nTexte : ");
+			//System.out.println("Phrase d'origine: "+s);
 
 			//Normalisation
 
@@ -54,14 +54,14 @@ public class TalMain3 {
 			}
 
 			this.thisnormalisation = normalisation;
-			System.out.println("Normalisation: "+normalisation);
+			//System.out.println("Normalisation: "+normalisation);
 
 			//Lemmatisation
 			Lemmatisation lemmatisation = new Lemmatisation(normalisation);
 			String lemme = lemmatisation.getLemmes();
 			lemme = lemme.substring(0, lemme.length() - 2);
 			lemme = lemme + '.';
-			System.out.println("Lemmatisation: "+lemme);
+			//System.out.println("Lemmatisation: "+lemme);
 			s = lemme;
 			tal_sqlLexer lexer = new tal_sqlLexer(new ANTLRReaderStream(new StringReader(s)));
 			CommonTokenStream tokens = new CommonTokenStream(lexer);
@@ -69,7 +69,7 @@ public class TalMain3 {
 			this.arbre = parser.listerequetes();
 			this.thislemmatisation = lemme;
 			this.thisnormalisation = normalisation;
-			System.out.println(this.arbre);
+			//System.out.println(this.arbre);
 		}
 		catch(Exception e) {  }
 	}

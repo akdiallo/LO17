@@ -281,7 +281,7 @@ public class tal_sqlLexer extends Lexer {
             	    if ( cnt1 >= 1 ) break loop1;
                         EarlyExitException eee =
                             new EarlyExitException(1, input);
-                        throw eee;
+                       // throw eee;
                 }
                 cnt1++;
             } while (true);
@@ -490,10 +490,10 @@ public class tal_sqlLexer extends Lexer {
                 alt4=2;
             }
             else {
-                NoViableAltException nvae =
-                    new NoViableAltException("", 4, 0, input);
+               // NoViableAltException nvae =
+                //    new NoViableAltException("", 4, 0, input);
 
-                throw nvae;
+              //  throw nvae;
             }
             switch (alt4) {
                 case 1 :
@@ -526,7 +526,7 @@ public class tal_sqlLexer extends Lexer {
                         NoViableAltException nvae =
                             new NoViableAltException("", 3, 0, input);
 
-                        throw nvae;
+                       // throw nvae;
                     }
 
                     switch (alt3) {
@@ -598,7 +598,8 @@ public class tal_sqlLexer extends Lexer {
             else {
                 MismatchedSetException mse = new MismatchedSetException(null,input);
                 recover(mse);
-                throw mse;}
+                //throw mse;
+                }
 
             // /Users/Romain/Dropbox/UTC/GI04/LO17/TP/TD4/tal_sql.g:20:30: ( 'a' .. 'z' )+
             int cnt5=0;
@@ -625,7 +626,7 @@ public class tal_sqlLexer extends Lexer {
             	    if ( cnt5 >= 1 ) break loop5;
                         EarlyExitException eee =
                             new EarlyExitException(5, input);
-                        throw eee;
+                       // throw eee;
                 }
                 cnt5++;
             } while (true);

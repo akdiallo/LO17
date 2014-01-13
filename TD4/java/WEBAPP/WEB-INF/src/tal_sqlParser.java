@@ -1025,10 +1025,10 @@ public class tal_sqlParser extends Parser {
                 }
                 break;
             default:
-                NoViableAltException nvae =
-                    new NoViableAltException("", 2, 0, input);
+               // NoViableAltException nvae =
+                //    new NoViableAltException("", 2, 0, input);
 
-                throw nvae;
+             //   throw nvae;
             }
 
             switch (alt2) {
@@ -1131,10 +1131,10 @@ public class tal_sqlParser extends Parser {
                 }
                 break;
             default:
-                NoViableAltException nvae =
-                    new NoViableAltException("", 3, 0, input);
+              //  NoViableAltException nvae =
+               //     new NoViableAltException("", 3, 0, input);
 
-                throw nvae;
+               // throw nvae;
             }
 
             switch (alt3) {
